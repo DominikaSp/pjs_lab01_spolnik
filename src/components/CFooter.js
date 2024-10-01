@@ -17,7 +17,7 @@ export const CFooter = () => {
     return (
 
         <div>
-            <h5>Prog. JS przykładowy serwis React. Dzisiaj mamy: {" "}{date.toString()}{" "}</h5>
+            <h5>Prog. JS przykładowy serwis React. Dzisiaj mamy: {" "}{date.toLocaleDateString()}{" "}</h5>
         </div>
     )
 }
