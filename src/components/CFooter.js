@@ -1,4 +1,5 @@
 import React from "react";
+import './CFooter.css';
 
 // function CFooter() {
 //     let date = new Date();
@@ -11,14 +12,23 @@ import React from "react";
 //     )
 // }
 
+// export const CFooter = () => {
+//     let date = new Date();
+
+//     return (
+
+//         <div>
+//             <h5>Prog. JS przykładowy serwis React. Dzisiaj mamy: {" "}{date.toLocaleDateString()}{" "}</h5>
+//         </div>
+//     )
+// }
+
 export const CFooter = () => {
     let date = new Date();
 
-    return (
-
-        <div>
-            <h5>Prog. JS przykładowy serwis React. Dzisiaj mamy: {" "}{date.toLocaleDateString()}{" "}</h5>
-        </div>
+    return React.createElement('div', { className: 'footerDivClass' },
+        React.createElement('h5', { id: 'footerText', className: 'footerTextClass' },
+            'Prog. JS, przykładowy serwis React. Dzisiaj mamy:' + date.toLocaleDateString('pl-PL'))
     )
 }
 
